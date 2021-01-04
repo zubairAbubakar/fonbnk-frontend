@@ -1,0 +1,27 @@
+<table class="table">
+
+    <thead class="thead-dark">
+        <tr>
+            <th>Date Initiated</th>
+            <th>Sender Phone Number</th>
+            <th>Transfer Type</th>
+            <th>Amount</th>
+            <th>Recipient Number</th>
+            <th>Date Received</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let transaction of transactions">
+            <td> {{ transaction.dateInitiated}} </td>
+            <td> {{ transaction.senderNumber}}</td>
+            <td> {{ transaction.transactionType}} </td>
+            <td> {{ transaction.amount}} </td>
+            <td> {{ transaction.recipientNumber}} </td>
+            <td> {{ transaction.dateReceived}} </td>
+            <td> {{ transaction.status}} </td>
+        </tr>
+
+    </tbody>
+</table>
